@@ -198,7 +198,7 @@ $.ajax({
 
 
 		console.log(res[i].image.length);
-		for (var a = 1; a < res[i].image.length; a++) {
+		for (var a = 0; a < res[i].image.length; a++) {
 			img += res[i].image[a]+",";
 		}
 
@@ -228,13 +228,13 @@ $(document).on('click','.project',function(){
 	var photo = "";
 	for (var i = 0; i < split.length; i++) {
 		photo += "<div class='col-lg-6'>";
-		photo += "<center><img src='"+split[i]+"' class='img-fluid' style='height:150px;'></center>";
+		photo += "<center><img src='"+split[i]+"' class='img-fluid' style='height:150px;margin:10px;'></center>";
 		photo += "</div>";
 	}
 
 console.log(photo);
 	$(".img-content").html(photo);
-	$("#content").html(ctn);
+	$("#content").html("<h3>"+ctn+"</h3>");
 });
 
 
