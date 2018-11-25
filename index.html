@@ -31,14 +31,15 @@
 		<div style="width: 80%;margin: 0 auto;margin-top: 10%;">
 			<center>
 				<div style="border: 2px solid #fff;width: 50%;padding: 50px;color: #fff">
-		<h1 class="name">FARIS WIDHIARTA</h1>
+		<h1 class="name">faris widhiarta</h1>
 <!-- 		<h2 class="sub-name">Freelance Web Developer</h2> -->
 
 <!-- 		<button class="btn-action">Work</button> -->
 <a target="_blank" class="social_media" href="https://github.com/fariswidhi"><i class="fab fa-github"></i></a>
 <a target="_blank" class="social_media" href="https://facebook.com/faris.widhiarta"><i class="fab fa-facebook"></i></a>
 <a target="_blank" class="social_media" href="https://api.whatsapp.com/send?phone=628982382323"><i class="fab fa-whatsapp"></i></a>
-
+<br>
+<center><a class="see_works" href="#content_e">LIHAT PEKERJAAN</a></center>
 
 		</div>
 			</center>
@@ -49,7 +50,7 @@
 
 		<div style="background-color: white;width: 30%;position: fixed;height: 100%;top: 0;" class="section-title">
 			<div style="padding: 20px;">
-				<h2 class="section-title_text">Work</h2>
+				<h2 class="section-title_text">PEKERJAAN TERAKHIR</h2>
 								<hr>
 				<ul class="projects">
 
@@ -76,6 +77,13 @@
 
 
 <style type="text/css">
+	.see_works{
+		letter-spacing: 4px;
+		color: #fff;
+	}
+	.see_works:hover{
+		text-decoration: none;;
+	}
 	.nav a {
 		color: #fff;
 		font-weight: bold;
@@ -168,12 +176,18 @@
 		margin: 10px;
 		color: #fff;
 	}
- 
+ img {
+
+  transition: opacity 0.3s ease-in;
+} 
 
 </style>
 <script src="jquery.min.js"></script>
+<script src="jquery.unveil.js"></script>
 <script type="text/javascript">
-
+$(document).ready(function() {
+  $("img").unveil();
+});
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
