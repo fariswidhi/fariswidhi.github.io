@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Faris Widhiarta</title>
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 
 
 </head>
@@ -29,17 +31,14 @@
 		<div style="width: 80%;margin: 0 auto;margin-top: 10%;">
 			<center>
 				<div style="border: 2px solid #fff;width: 50%;padding: 50px;color: #fff">
-		<h1 class="name">Faris Widhiarta</h1>
-		<h2 class="sub-name">Freelance Web Developer</h2>
-		<ul style="display: inline-block;">
-			<li><a href="#">F</a></li>
-			<li><a href="#">T</a></li>
-			<li><a href="#">G</a></li>
-		</ul>
+		<h1 class="name">YOUR NAME</h1>
+<!-- 		<h2 class="sub-name">Freelance Web Developer</h2> -->
+
 <!-- 		<button class="btn-action">Work</button> -->
-<a href="#content_e">Work</a>
-		<button class="btn-action">Open Source Apps</button>
-		<button>Contact</button>
+<a class="social_media" href="#content_e"><i class="fab fa-github"></i></a>
+<a class="social_media" href="#"><i class="fab fa-facebook"></i></a>
+<a class="social_media" href="#"><i class="fab fa-whatsapp"></i></a>
+
 
 		</div>
 			</center>
@@ -63,8 +62,11 @@
 				<div style="width: 100%;float: left;">
 
 					<div id="content">
-						
+
 					</div>
+
+												<div class="row img-content" style="margin-left: 0;margin-right: 0;">
+							</div>
 				</div>
 
 			</div>
@@ -161,7 +163,11 @@
 		color: #000;
 		font-style: italic;
 	}
-
+	.social_media{
+		font-size: 30px;
+		margin: 10px;
+		color: #fff;
+	}
  
 
 </style>
@@ -180,18 +186,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 $.ajax({
-	url: "array.php",
+	url: "data.json",
 	method: "GET",
 	dataType:"JSON",
 	success:function(res){
 		var li = "";
+		console.log(res);
 	for (var i = 0; i < res.length; i++) {
 		var img = "";
 
 
 
-		for (var a = 0; a < res[i].image.length; a++) {
-			img += ","+res[i].image[a];
+		console.log(res[i].image.length);
+		for (var a = 1; a < res[i].image.length; a++) {
+			img += res[i].image[a]+",";
 		}
 
 				// console.log(img);
@@ -211,7 +219,21 @@ $.ajax({
 $(document).on('click','.project',function(){
 	var ctn = $(this).attr('data-content');
 	var img = $(this).attr('data-img');
-	console.log(img);
+	// console.log(img);
+
+	var split = img.split(",");
+
+	// console.log(split);
+
+	var photo = "";
+	for (var i = 0; i < split.length; i++) {
+		photo += "<div class='col-lg-6'>";
+		photo += "<center><img src='"+split[i]+"' class='img-fluid' style='height:150px;'></center>";
+		photo += "</div>";
+	}
+
+console.log(photo);
+	$(".img-content").html(photo);
 	$("#content").html(ctn);
 });
 

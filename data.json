@@ -1,0 +1,68 @@
+[
+{
+"name": "Quransaya.id",
+"description": "Membuat Website Portal Al-Quran, Quransaya.id dengan Codeigniter",
+"image": [
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/4.1.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/4.2.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/4.3.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/4.4.png?raw=true"
+]
+},
+{
+"name": "Slicing PSD ke HTML",
+"description": "Slicing website game dari PSD ke HTML",
+"image":[
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/1.1.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/1.2.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/1.3.png?raw=true"
+]
+},
+{
+"name": "Redesign Website Pemerintah Kabupaten Manggarai Barat",
+"description": "Membuat Tampilan Baru Website Pemerintah Kabupaten Manggarai Barat, Nusa Tenggara Barat",
+"image":[
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/3.1.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/3.2.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/3.3.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/3.4.png?raw=true"
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/3.5.png?raw=true"
+]
+},
+{
+"name": "Website Booking Tiket Marathon Online",
+"description": "Membuat Website Booking Tiket Online",
+"image":[
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/2.1.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/2.2.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/2.3.png?raw=true",
+"https://github.com/fariswidhi/fariswidhi.github.io/blob/master/img/2.4.png?raw=true"
+]
+},
+{
+"name": "Aplikasi Scanner Tiket Android",
+"description": "Scanner Tiket Android dengan React Native",
+"image":[
+"https://github.com/fariswidhi/barcode/raw/master/2bccfee2-d6e4-4161-9982-f095e7487e8b.jpeg?raw=true",
+"https://github.com/fariswidhi/barcode/raw/master/c2d6fc61-3a02-4bee-9ec5-83c22d591a92.jpeg?raw=true",
+"https://github.com/fariswidhi/barcode/raw/master/d8f6c760-ec5d-4197-a3b8-7faa201dd9ff.jpeg?raw=true"
+]
+},
+{
+"name": "Aplikasi Inventaris Sekolah",
+"description": "Pembuatan Aplikasi Inventaris Sekolah dengan Laravel 5.5",
+"image": [
+"https://raw.githubusercontent.com/fariswidhi/inventaris-sekolah/master/Screenshot%20from%202018-02-23%2008-26-00.png",
+"https://raw.githubusercontent.com/fariswidhi/inventaris-sekolah/master/Screenshot%20from%202018-02-23%2008-26-00.png"
+]
+},
+{
+"name": "News React Native",
+"description": "Aplikasi Android Berita Sederhana dengan React Native",
+"image":[
+"https://raw.githubusercontent.com/fariswidhi/news-react-native/master/photo6156542023897819166.jpg",
+"https://raw.githubusercontent.com/fariswidhi/news-react-native/master/photo6156542023897819167.jpg",
+"https://raw.githubusercontent.com/fariswidhi/news-react-native/master/photo6156542023897819168.jpg"
+]
+}
+]
